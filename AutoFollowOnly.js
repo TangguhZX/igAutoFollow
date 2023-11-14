@@ -1,6 +1,6 @@
 const Nightmare = require('nightmare');
-const username = 'shevilorent';            
-const password = 'Tangguhrizqi1';         
+const username = 'username';            
+const password = 'password';         
                                             
 var XLSX = require('xlsx')
 var workbook = XLSX.readFile('List_Followers.xlsx');
@@ -30,7 +30,7 @@ nightmare
     console.log("   ",username)
     console.log("----------------------------")
 
-    var nilai=374;
+    var nilai=0;
     function balik(){
         nightmare
         .goto('https://www.instagram.com/' + xldata[nilai].username)
